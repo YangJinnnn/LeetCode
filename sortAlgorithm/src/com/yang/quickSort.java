@@ -13,16 +13,13 @@ public class quickSort {
 
     public static void sort(int[] array, int low, int high){
         if(low < high){
-            int privot = partition(array, low, high);
-            sort(array, 0, privot);
-            sort(array, privot+1, high);
+            int pivot = partition(array, low, high);
+            sort(array, 0, pivot);
+            sort(array, pivot+1, high);
         }
     }
 
     public static int partition(int[] array, int low, int high){
-        Random random = new Random();
-        int index = random.nextInt(high-low+1);
-        swap(array, index, low);
         int temp = array[low];
         while (low < high){
             while (low < high && array[high] >= temp)
@@ -34,12 +31,6 @@ public class quickSort {
         }
         array[low] = temp;
         return low;
-    }
-
-    public static void swap(int[] array, int i,int j){
-        int temp = array[i];
-        array[i] = array[j];
-        array[j] = temp;
     }
 
     public static void main(String[] args) {
@@ -55,7 +46,6 @@ public class quickSort {
         sort(array, 0, n-1);
         for(int value: array)
             System.out.println(value);
-
     }
 
 }

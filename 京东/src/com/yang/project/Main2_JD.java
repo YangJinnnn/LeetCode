@@ -2,7 +2,7 @@ package com.yang.project;
 
 import java.util.Scanner;
 
-public class Main2 {
+public class Main2_JD {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int N = in.nextInt();

@@ -7,7 +7,7 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.function.IntConsumer;
 
-public class Main4 {
+public class Main4_AQY {
     public static void main(String[] args) {
         final Scanner reader = new Scanner(System.in);
         int n = reader.nextInt();
