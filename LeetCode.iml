@@ -8,6 +8,7 @@
       <sourceFolder url="file://$MODULE_DIR$/爱奇艺/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/网易/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/美团/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sortAlgorithm/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
