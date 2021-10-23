@@ -26,22 +26,18 @@ public class Main_HW {
     public static int solution(List<List<Integer>> wall){
         HashMap<Integer, Integer> hashMap = new HashMap<>();
         for (List<Integer> tmp : wall) {
-            Integer integer = 0;
+            int sum = 0;
             for (int j = 0; j < tmp.size() - 1; j++) {
-                integer += tmp.get(j);
-                Integer count = hashMap.getOrDefault(integer, 0);
-                hashMap.put(integer, count + 1);
+                sum += tmp.get(j);
+                int count = hashMap.getOrDefault(sum, 0);
+                hashMap.put(sum, count + 1);
             }
         }
         int max = 0;
         for(Integer i:hashMap.values()){
             max = Math.max(max, i);
         }
-        if(hashMap.size()==0){
-            return wall.size();
-        }else {
-            return wall.size()-max;
-        }
+        return wall.size()-max;
 
     }
 }

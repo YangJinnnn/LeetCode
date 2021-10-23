@@ -39,8 +39,6 @@ public class LeetCode33 {
                     high = mid - 1;
                 }
             }
-
-
         }
         return index;
     }
